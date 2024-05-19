@@ -309,3 +309,58 @@ params10 = {
 }
 
 # โคมไฟและพัดลมเพดาน
+params11 = {
+  "lang": "th",
+  "userType": "BUYER",
+  "locale": "th",
+  "orgIdfier": "scg",
+  "f": [
+    {
+      "field": "primaryCategory.o_id",
+      "type": "subcategory2",
+      "codes": ["476"]
+    }
+  ],
+  "limit": 48,
+  "page": 2,
+  "transformData": True,
+  "searchListMetaInfo": {
+    "nocNocChoiceLimit": 8,
+    "comingSoonLimit": 8,
+    "collapsedView": False
+  },
+  "abType": "A",
+  "relevanceScoreABType": "ranking_score_b"
+}
+
+# สี
+params12 = {
+  "lang": "th",
+  "userType": "BUYER",
+  "locale": "th",
+  "orgIdfier": "scg",
+  "f": [
+    {
+      "field": "primaryCategory.o_id",
+      "type": "subcategory2",
+      "codes": ["478"]
+    },
+    {
+      "hidden": False,
+      "field": "stockStatus",
+      "operator": "eq",
+      "codes": ["IN_STOCK", "LOW_STOCK", "isMadeToOrder.code"]
+    }
+  ],
+  "limit": 48,
+  "page": 2,
+  "transformData": True,
+  "searchListMetaInfo": {
+    "nocNocChoiceLimit": 8,
+    "comingSoonLimit": 8,
+    "collapsedView": False
+  },
+  "abType": "A",
+  "relevanceScoreABType": "ranking_score_b"
+}
+
